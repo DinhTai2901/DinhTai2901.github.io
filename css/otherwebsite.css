@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    font-family: monospace;
+
+}
+/*
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: aqua;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding: 10px 0;
+}
+nav{
+    float: right;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+   
+}
+
+nav li{
+
+display: inline-block;
+margin-left: 70px;
+margin-bottom: 20px;
+padding-top: 25px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+*/
+
+.container{
+    width: 100%;
+    margin:0 auto;
+
+}
+header{
+    background-color:gray;
+    text-align: center;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav li{
+margin: 1em;
+display: inline-block;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.nav-left{
+    float: left;
+}
+.nav-right{
+    float: right;
+}
+
+
+/* ADVERT  */
+.advert{
+margin-top: 3em;
+padding-bottom: 2em;
+border-bottom: 2px solid;
+    
+}
+.advert-img{
+    display: none;
+}
+.advert h1{
+    margin: .5em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+blockquote{
+    margin: 1em;
+}
+
+/*   */
+
+/* CONTENT   */
+
+.content h1{
+    margin: .5em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+blockquote{
+    margin: 1em;
+}
+img{
+    display: block;
+    width: 95%;
+    margin: 2em auto 3em auto;
+
+}
+
+
+/* CONTENT   */
+
+/* FOOTER  */
+.footer{
+    margin: 1em;
+}
+.footer h3{
+    font-size: 1em;
+    font-weight:bold;
+    font-size: 1.5em;
+}
+.footer a{
+    text-decoration: none;
+    color:blue
+}
+
+/* độ phân giải màn hình lớn hơn hơn hoặc bằng 768px và nhỏ hơn 992px, */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+img{
+
+ width: 45%;
+ height: auto;
+ display: inline-block;
+margin: 1em;
+}
+.footer a{
+text-decoration: underline;
+}
+.footer{
+margin-top: 3em;
+margin-bottom: 3em;
+}
+.footer h3{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.footer{
+    font-size: 1.2em;
+}
+header{
+padding: 2em;
+}
+nav li a{
+    font-size: 1.5em;
+}
+}
+
+/*  độ phân giải màn hình lớn hơn hoặc bằng 992px */
+@media screen and (min-width:992px) {
+
+header{
+    width: 80%;
+    margin: auto;
+    font-size: 1.5em;
+    background-color: unset;
+  
+}
+.advert{
+    border-bottom:none;
+    position: relative;
+}
+.advert-img{
+    display: block;
+    margin: auto;
+}
+
+.info{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 1.5em;
+    color:white;
+}
+nav li a{
+    color: black;
+    
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.col{
+    width: 30%;
+}
+.intro{
+margin-left: 2em;
+
+}
+.content{
+background-color:gainsboro;
+width: 95%;
+margin: auto; 
+height: 80vh;
+font-size: 1.25em;
+padding-bottom: 1em;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+
+    padding-bottom: 2em;
+    margin:auto;
+    background-color: ghostwhite;
+    width: 95%;
+    font-size: 1.25em;
+
+}
+.footer h3{
+   font-size: 1.5em;
+}
+}
+
